@@ -66,7 +66,8 @@ p span {
 }
 
 p span a {
-  color: #262f2f
+  color: #262f2f;
+  outline-offset: .25rem
 }
 
 header {
@@ -79,7 +80,13 @@ header {
   color: #4b5d5d
 }
 
+header a {
+  display: block;
+  outline-offset: .25rem
+}
+
 header svg {
+  display: block;
   width: 84px;
   height: 30px
 }
