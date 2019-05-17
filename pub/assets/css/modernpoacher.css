@@ -20,8 +20,7 @@ html {
   background-color: #fff;
   width: 100%;
   height: 100%;
-  font-family: Roboto,sans-serif;
-  overflow: hidden
+  font-family: Roboto,sans-serif
 }
 
 body,
@@ -52,18 +51,55 @@ h1 {
 p {
   font-size: 1.25rem;
   line-height: 1.75rem;
-  position: absolute;
+  text-align: center;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
-  opacity: .85;
-  padding: 4em 0
+  background-color: #cff;
+  padding: 4em 0;
+  letter-spacing: .1em
 }
 
 p span {
-  display: block;
-  opacity: 1
+  display: block
+}
+
+p span a {
+  color: #262f2f
+}
+
+header {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 1.25rem;
+  color: #4b5d5d
+}
+
+header svg {
+  width: 84px;
+  height: 30px
+}
+
+header svg path {
+  fill: #151013
+}
+
+footer {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 1.25rem;
+  color: #4b5d5d
+}
+
+section {
+  height: 100%
 }
 
 @media screen and (orientation:landscape) {
@@ -81,6 +117,12 @@ p span {
   section {
     min-height: 568px;
     min-width: 320px
+  }
+}
+
+@media screen and (max-height:824px) {
+  section p {
+    opacity: .85
   }
 }
 /*# sourceMappingURL=modernpoacher.css.map */

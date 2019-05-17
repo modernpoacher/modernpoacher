@@ -36,8 +36,6 @@
     height: 100%;
 
     font-family: 'Roboto', sans-serif;
-
-    overflow: hidden;
   }
 
   h1, p {
@@ -73,20 +71,64 @@
 
     display: block;
 
-    position: absolute;
+    text-align: center;
+
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
 
-    background-color: white;
-    opacity: 0.85;
+    background-color: #ccffff;
 
     padding: 4em 0;
+    letter-spacing: 0.1em;
 
     span {
       display: block;
-      opacity: 1;
+
+      a {
+        color: #262f2f;
+      }
     }
+  }
+
+  header {
+    font-size: 1rem;
+    line-height: 1.375rem;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    margin: 1.25rem;
+
+    color: #4b5d5d;
+
+    svg {
+      width: 84px;
+      height: 30px;
+
+      path {
+        fill: #151013; // #24292e;
+      }
+    }
+  }
+
+  footer {
+    font-size: 1rem;
+    line-height: 1.375rem;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    margin: 1.25rem;
+
+    color: #4b5d5d;
+  }
+
+  section {
+    height: 100%;
   }
 
   @media screen and (orientation: landscape) {
@@ -104,5 +146,11 @@
     section {
       min-height: 568px;
       min-width: 320px;
+    }
+  }
+
+  @media screen and (max-height: 824px) {
+    section p {
+      opacity: 0.85;
     }
   }
