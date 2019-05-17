@@ -1,0 +1,108 @@
+/**
+ *  `govuk-visually-hidden`
+ */
+%invisible {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+
+  border: 0;
+
+  white-space: nowrap;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    background-color: white;
+
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Roboto', sans-serif;
+
+    overflow: hidden;
+  }
+
+  h1, p {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+
+    display: block;
+
+    width: 280px;
+    height: 636px;
+
+    margin: 0 auto;
+
+    background: transparent url('/assets/png/modernpoacher.png') no-repeat top center;
+    background-size: contain;
+
+    span {
+      @extend %invisible;
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: white;
+    opacity: 0.85;
+
+    padding: 4em 0;
+
+    span {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  @media screen and (orientation: landscape) {
+    html,
+    body,
+    section {
+      min-width: 568px;
+      min-height: 320px;
+    }
+  }
+
+  @media screen and (orientation: portrait) {
+    html,
+    body,
+    section {
+      min-height: 568px;
+      min-width: 320px;
+    }
+  }

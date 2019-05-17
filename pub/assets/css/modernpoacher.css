@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+h1 span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap
+}
+
+body,
+html {
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  font-family: Roboto,sans-serif;
+  overflow: hidden
+}
+
+body,
+h1,
+html,
+p {
+  margin: 0;
+  padding: 0;
+  border: none
+}
+
+h1,
+p {
+  text-align: center;
+  display: block
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 4.5rem;
+  width: 280px;
+  height: 636px;
+  margin: 0 auto;
+  background: transparent url(/assets/png/modernpoacher.png) no-repeat top;
+  background-size: contain
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  opacity: .85;
+  padding: 4em 0
+}
+
+p span {
+  display: block;
+  opacity: 1
+}
+
+@media screen and (orientation:landscape) {
+  body,
+  html,
+  section {
+    min-width: 568px;
+    min-height: 320px
+  }
+}
+
+@media screen and (orientation:portrait) {
+  body,
+  html,
+  section {
+    min-height: 568px;
+    min-width: 320px
+  }
+}
+/*# sourceMappingURL=modernpoacher.css.map */
