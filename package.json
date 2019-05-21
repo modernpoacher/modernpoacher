@@ -13,23 +13,27 @@
     "lint:js": "eslint *.js build",
     "lint:js:fix": "npm run lint:js -- --fix",
     "lint:css": "stylelint src/sass",
-    "lint:css:fix": "npm run lint:css -- --fix"
+    "lint:css:fix": "npm run lint:css -- --fix",
+    "deps": "deps",
+    "deps:prod": "deps --save-prod",
+    "deps:dev": "deps --save-dev"
   },
   "dependencies": {
     "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.4",
+    "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/plugin-proposal-do-expressions": "^7.2.0",
     "@babel/plugin-proposal-export-default-from": "^7.2.0",
     "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
     "@babel/plugin-proposal-throw-expressions": "^7.2.0",
-    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.4.4",
     "babel-plugin-module-resolver": "^3.2.0",
-    "core-js": "^3.0.1",
+    "core-js": "^3.1.1",
     "module-alias": "^2.2.0"
   },
   "devDependencies": {
+    "@modernpoacher/deps": "0.0.5",
     "autoprefixer": "^9.5.1",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.6",
