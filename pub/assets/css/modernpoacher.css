@@ -109,6 +109,20 @@ section {
   height: 100%
 }
 
+@media screen and (orientation:landscape) and (max-width:736px) {
+  p {
+    font-size: .875rem;
+    line-height: 1.25rem
+  }
+}
+
+@media screen and (orientation:portrait) and (max-width:414px) {
+  p {
+    font-size: .875rem;
+    line-height: 1.25rem
+  }
+}
+
 @media screen and (orientation:landscape) {
   body,
   html,
