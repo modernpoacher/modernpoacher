@@ -34,40 +34,18 @@ p {
 
 h1,
 p {
-  text-align: center;
-  display: block
+  text-align: center
 }
 
 h1 {
   font-size: 3rem;
   line-height: 4.5rem;
+  display: block;
   width: 280px;
   height: 636px;
   margin: 0 auto;
   background: transparent url(/assets/png/modernpoacher.png) no-repeat top;
   background-size: contain
-}
-
-p {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #cff;
-  padding: 4em 0;
-  letter-spacing: .1em
-}
-
-p span {
-  display: block
-}
-
-p span a {
-  color: #262f2f;
-  outline-offset: .25rem
 }
 
 header {
@@ -107,6 +85,29 @@ footer {
 
 section {
   height: 100%
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #cff;
+  padding: 4em 0;
+  letter-spacing: .1em
+}
+
+p,
+p span {
+  display: block
+}
+
+p span a {
+  color: #262f2f;
+  outline-offset: .25rem
 }
 
 @media screen and (orientation:landscape) and (max-width:736px) {

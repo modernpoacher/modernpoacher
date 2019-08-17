@@ -1,5 +1,3 @@
-require('dotenv/config')
-
 const {
   env: {
     NODE_ENV = 'development'
@@ -13,7 +11,7 @@ const presets = [
       targets: {
         node: 'current'
       },
-      corejs: '3.1.1'
+      corejs: 3
     }
   ]
 ]
@@ -36,7 +34,7 @@ const plugins = [
       cwd: 'babelrc',
       alias: {
         '@modernpoacher': './src',
-        'build': './build'
+        build: './build'
       }
     }
   ]
