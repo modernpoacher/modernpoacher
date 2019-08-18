@@ -16,12 +16,26 @@ const presets = [
   ]
 ]
 
+const plugins = [
+  [
+    'module-resolver',
+    {
+      root: ['./src'],
+      cwd: 'babelrc',
+      alias: {
+        build: './build'
+      }
+    }
+  ]
+]
+
 module.exports = (api = { cache: { using: () => console.error({ NODE_ENV }) } }) => {
   console.log({ NODE_ENV })
 
   api.cache.using(() => NODE_ENV)
 
   return {
-    presets
+    presets,
+    plugins
   }
 }
