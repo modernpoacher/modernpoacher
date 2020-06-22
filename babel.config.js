@@ -2,13 +2,16 @@ const debug = require('debug')
 
 const log = debug('modernpoacher')
 
-log('`modernpoacher` is awake')
-
 const {
+  DEBUG = 'modernpoacher',
   env: {
     NODE_ENV = 'development'
   }
 } = process
+
+debug.enable(DEBUG)
+
+log('`modernpoacher` is awake')
 
 const presets = [
   [
