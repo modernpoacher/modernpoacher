@@ -1,3 +1,9 @@
+const debug = require('debug')
+
+const log = debug('modernpoacher')
+
+log('`modernpoacher` is awake')
+
 const {
   env: {
     NODE_ENV = 'development'
@@ -29,8 +35,8 @@ const plugins = [
   ]
 ]
 
-module.exports = (api = { cache: { using: () => console.error({ NODE_ENV }) } }) => {
-  console.log({ NODE_ENV })
+module.exports = (api = { cache: { using: () => log({ NODE_ENV, default: true }) } }) => {
+  log({ NODE_ENV })
 
   api.cache.using(() => NODE_ENV)
 
