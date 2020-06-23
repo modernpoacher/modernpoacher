@@ -3,8 +3,8 @@ const debug = require('debug')
 const log = debug('modernpoacher')
 
 const {
-  DEBUG = 'modernpoacher',
   env: {
+    DEBUG = 'modernpoacher',
     NODE_ENV = 'development'
   }
 } = process
