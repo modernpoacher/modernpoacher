@@ -41,17 +41,17 @@ const plugins = [
 const API = {
   cache: {
     using () {
-      log({ NODE_ENV, default: true })
-
-      return false
+      log({ NODE_ENV, API: true })
     }
   }
 }
 
 module.exports = (api = API) => {
-  log({ NODE_ENV })
+  api.cache.using(() => {
+    log({ NODE_ENV })
 
-  api.cache.using(() => NODE_ENV === 'production')
+    return NODE_ENV === 'production'
+  })
 
   return {
     presets,
