@@ -38,20 +38,14 @@ const plugins = [
   ]
 ]
 
-const API = {
-  cache: {
-    using () {
-      log({ NODE_ENV, API: true })
-    }
-  }
+function using () {
+  log({ NODE_ENV })
+
+  return NODE_ENV === 'production'
 }
 
-module.exports = (api = API) => {
-  api.cache.using(() => {
-    log({ NODE_ENV })
-
-    return NODE_ENV === 'production'
-  })
+module.exports = (api) => {
+  if (api) api.cache.using(using)
 
   return {
     presets,
