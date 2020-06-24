@@ -20,3 +20,12 @@ gulp
 
 gulp
   .task('build:css:watch', gulp.series('build:css', buildCssWatch))
+
+gulp
+  .task('build:clean', gulp.series('build:css:clean'))
+
+gulp
+  .task('build', gulp.series('build:css'))
+
+gulp
+  .task('build:watch', gulp.series('build:css:watch'))
