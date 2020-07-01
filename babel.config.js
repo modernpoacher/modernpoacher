@@ -21,10 +21,10 @@ function env () {
 const presets = [
   [
     '@babel/env', {
-      useBuiltIns: 'entry',
       targets: {
         node: 'current'
       },
+      useBuiltIns: 'usage',
       corejs: 3
     }
   ]
