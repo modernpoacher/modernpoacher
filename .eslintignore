@@ -1,4 +1,6 @@
 .circleci
 .github
 node_modules
+
+pub/assets
 *.html
