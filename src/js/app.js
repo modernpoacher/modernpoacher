@@ -1,7 +1,7 @@
 import debug from 'debug'
 import $ from 'jquery'
 
-const log = debug('modernpoacher')
+const log = debug('@modernpoacher/modernpoacher')
 
 log('`modernpoacher` is awake')
 

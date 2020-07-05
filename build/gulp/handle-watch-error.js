@@ -2,7 +2,7 @@ import debug from 'debug'
 
 import path from 'path'
 
-const log = debug('modernpoacher')
+const log = debug('@modernpoacher/modernpoacher')
 
 const CWD = process.cwd()
 

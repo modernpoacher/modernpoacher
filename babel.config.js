@@ -1,6 +1,6 @@
 const debug = require('debug')
 
-const log = debug('modernpoacher')
+const log = debug('@modernpoacher/modernpoacher')
 
 log('`modernpoacher` is awake')
 
