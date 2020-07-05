@@ -2,13 +2,13 @@ const debug = require('debug')
 
 const log = debug('modernpoacher')
 
+log('`modernpoacher` is awake')
+
 const {
   env: {
     NODE_ENV = 'development'
   }
 } = process
-
-log('`modernpoacher` is awake')
 
 function env () {
   log({ NODE_ENV })
