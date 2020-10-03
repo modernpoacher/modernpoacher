@@ -33,8 +33,8 @@ const getTransformForCleanCss = () => (
 
 const getTransformForCssPurge = () => (
   cssPurge({
-    trim: false, // we have chosen to beautify not minify in cleanCSS, so let's not minify here
-    trim_last_semicolon: true, // cleanCSS does this for us; cssPurge puts it back (unless we prevent it, here)
+    trim: false, // we have chosen to beautify not minify in cleanCSS so let's not minify here
+    trim_last_semicolon: true, // cleanCSS does this for us (cssPurge puts it back unless we prevent it, here)
     shorten: false, // 'true' kills some inline '<svg />' elements
     format: false,
     verbose: false
