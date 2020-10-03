@@ -1,9 +1,12 @@
 import debug from 'debug'
-import $ from 'jquery'
 
 const log = debug('@modernpoacher/modernpoacher')
 
 log('`modernpoacher` is awake')
+
+const {
+  $
+} = global
 
 function goFrom (url) {
   const {

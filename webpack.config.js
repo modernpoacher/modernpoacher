@@ -1,11 +1,14 @@
 const path = require('path')
+
 const {
   CleanWebpackPlugin
 } = require('clean-webpack-plugin')
+
 const {
   EnvironmentPlugin,
   SourceMapDevToolPlugin
 } = require('webpack')
+
 const TerserPlugin = require('terser-webpack-plugin')
 
 const srcPath = path.join(path.resolve('./src'), 'js/app.js')
@@ -22,9 +25,6 @@ module.exports = {
   },
   stats: {
     colors: true
-  },
-  externals: {
-    jquery: 'jQuery'
   },
   module: {
     rules: [
