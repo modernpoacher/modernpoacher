@@ -21,160 +21,160 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    border: none;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
 
-    font-size: 16px;
-    line-height: 24px;
+  font-size: 16px;
+  line-height: 24px;
 
-    background-color: white;
+  background-color: white;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, p {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 4.5rem;
+
+  display: block;
+
+  width: 280px;
+  height: 636px;
+
+  margin: 0 auto;
+
+  background: transparent url('../png/modernpoacher.png') no-repeat top center;
+  background-size: contain;
+
+  span {
+    @extend %invisible;
   }
+}
 
-  h1, p {
-    margin: 0;
-    padding: 0;
-    border: none;
+header {
+  font-size: 1rem;
+  line-height: 1.375rem;
 
-    text-align: center;
-  }
+  position: fixed;
+  right: 0;
+  top: 0;
 
-  h1 {
-    font-size: 3rem;
-    line-height: 4.5rem;
+  margin: 1.25rem;
 
+  color: #4b5d5d;
+
+  a {
     display: block;
 
-    width: 280px;
-    height: 636px;
-
-    margin: 0 auto;
-
-    background: transparent url('/assets/png/modernpoacher.png') no-repeat top center;
-    background-size: contain;
-
-    span {
-      @extend %invisible;
-    }
+    outline-offset: .25rem;
   }
 
-  header {
-    font-size: 1rem;
-    line-height: 1.375rem;
+  svg {
+    display: block;
 
-    position: fixed;
-    right: 0;
-    top: 0;
+    width: 84px;
+    height: 30px;
 
-    margin: 1.25rem;
+    path {
+      fill: #151013; // #24292e;
+    }
+  }
+}
 
-    color: #4b5d5d;
+footer {
+  font-size: 1rem;
+  line-height: 1.375rem;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  margin: 1.25rem;
+
+  color: #4b5d5d;
+}
+
+section {
+  height: 100%;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+
+  display: block;
+
+  text-align: center;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: #ccffff;
+
+  padding: 4em 0;
+  letter-spacing: 0.1em;
+
+  span {
+    display: block;
 
     a {
-      display: block;
+      color: #262f2f;
 
       outline-offset: .25rem;
     }
-
-    svg {
-      display: block;
-
-      width: 84px;
-      height: 30px;
-
-      path {
-        fill: #151013; // #24292e;
-      }
-    }
   }
+}
 
-  footer {
-    font-size: 1rem;
-    line-height: 1.375rem;
-
-    position: fixed;
-    left: 0;
-    bottom: 0;
-
-    margin: 1.25rem;
-
-    color: #4b5d5d;
-  }
-
-  section {
-    height: 100%;
-  }
-
+@media screen and (orientation: landscape) and (max-width: 736px) {
   p {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-
-    display: block;
-
-    text-align: center;
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    background-color: #ccffff;
-
-    padding: 4em 0;
-    letter-spacing: 0.1em;
-
-    span {
-      display: block;
-
-      a {
-        color: #262f2f;
-
-        outline-offset: .25rem;
-      }
-    }
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
+}
 
-  @media screen and (orientation: landscape) and (max-width: 736px) {
-    p {
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-    }
+@media screen and (orientation: portrait) and (max-width: 414px) {
+  p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
+}
 
-  @media screen and (orientation: portrait) and (max-width: 414px) {
-    p {
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-    }
+@media screen and (orientation: landscape) {
+  html,
+  body,
+  section {
+    min-width: 568px;
+    min-height: 320px;
   }
+}
 
-  @media screen and (orientation: landscape) {
-    html,
-    body,
-    section {
-      min-width: 568px;
-      min-height: 320px;
-    }
+@media screen and (orientation: portrait) {
+  html,
+  body,
+  section {
+    min-height: 568px;
+    min-width: 320px;
   }
+}
 
-  @media screen and (orientation: portrait) {
-    html,
-    body,
-    section {
-      min-height: 568px;
-      min-width: 320px;
-    }
+@media screen and (max-height: 824px) {
+  section p {
+    opacity: 0.85;
   }
-
-  @media screen and (max-height: 824px) {
-    section p {
-      opacity: 0.85;
-    }
-  }
+}

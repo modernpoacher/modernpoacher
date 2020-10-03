@@ -44,7 +44,7 @@ h1 {
   width: 280px;
   height: 636px;
   margin: 0 auto;
-  background: transparent url(/assets/png/modernpoacher.png) no-repeat top;
+  background: transparent url(../png/modernpoacher.png) no-repeat top;
   background-size: contain
 }
 
