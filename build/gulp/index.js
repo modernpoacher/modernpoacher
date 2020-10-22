@@ -4,7 +4,7 @@ import del from 'del'
 
 import cssFromSass from './css-from-sass'
 
-import handleWatchError from './handle-watch-error'
+import handleError from './handle-error'
 
 export const buildCssClean = () => (
   gulp.src('./pub/assets/css/*', { read: false })
@@ -15,14 +15,11 @@ export const buildCss = gulp.series(cssFromSass)
 
 export const buildCssWatch = () => (
   gulp.watch(
-    [
-      './src/sass/**/*'
-    ],
+    './src/sass/**/*',
     {
       name: 'build-css-watch',
       cwd: process.cwd()
     },
     gulp.series(buildCssClean, buildCss)
-  )
-    .on('error', handleWatchError)
+  ).on('error', handleError)
 )
