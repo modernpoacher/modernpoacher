@@ -42,7 +42,7 @@ const getTransformForCssPurge = () => (
 )
 
 const cssFromSass = () => (
-  gulp.src(['./src/sass/**/*.*']) // , '!./src/sass/**/_*.*'])
+  gulp.src('./src/sass/**/*.*') // (['./src/sass/**/*.*', '!./src/sass/**/_*.*'])
     .pipe(sourcemaps.init())
     .pipe(getTransformForSass())
     .pipe(getTransformForPostCss())

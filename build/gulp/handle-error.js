@@ -8,7 +8,7 @@ const log = debug('@modernpoacher/modernpoacher')
 
 log('`handleError` is awake')
 
-export default function ({
+export default function handleError ({
   code = 'No error code defined',
   message = 'No error message defined',
   filename: f = 'No file name defined',
