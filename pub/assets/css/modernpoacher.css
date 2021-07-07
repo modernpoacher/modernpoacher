@@ -110,14 +110,14 @@ p span a {
   outline-offset: .25rem
 }
 
-@media screen and (orientation:landscape) and (max-width:736px) {
+@media screen and (orientation:landscape)and (max-width:736px) {
   p {
     font-size: .875rem;
     line-height: 1.25rem
   }
 }
 
-@media screen and (orientation:portrait) and (max-width:414px) {
+@media screen and (orientation:portrait)and (max-width:414px) {
   p {
     font-size: .875rem;
     line-height: 1.25rem
