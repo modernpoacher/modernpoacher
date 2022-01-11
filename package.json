@@ -27,11 +27,11 @@
     "debug": "^4.3.3"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.7",
+    "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.7",
     "@babel/eslint-parser": "^7.16.5",
-    "@babel/preset-env": "^7.16.7",
-    "@babel/register": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/register": "^7.16.8",
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.3",
     "babel-plugin-minify-dead-code-elimination": "^0.5.1",
@@ -58,7 +58,7 @@
     "husky": "^7.0.4",
     "module-alias": "^2.2.2",
     "postcss": "^8.4.5",
-    "postcss-scss": "^4.0.2",
+    "postcss-scss": "^4.0.3",
     "rimraf": "^3.0.2",
     "sass": "^1.47.0",
     "stylelint": "^14.2.0",
