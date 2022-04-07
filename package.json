@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.8",
+    "@babel/core": "^7.17.9",
     "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "@babel/register": "^7.17.7",
@@ -60,7 +60,7 @@
     "postcss": "^8.4.12",
     "postcss-scss": "^4.0.3",
     "rimraf": "^3.0.2",
-    "sass": "^1.49.11",
+    "sass": "^1.50.0",
     "stylelint": "^14.6.1",
     "stylelint-config-recommended-scss": "^6.0.0",
     "stylelint-scss": "^4.2.0",
