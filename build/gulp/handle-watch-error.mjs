@@ -6,9 +6,9 @@ import {
 
 const log = debug('@modernpoacher/modernpoacher')
 
-log('`handleError` is awake')
+log('`handleWatchError` is awake')
 
-export default function handleError ({
+export default function handleWatchError ({
   code = 'No error code defined',
   message = 'No error message defined',
   filename: f = 'No file name defined',
