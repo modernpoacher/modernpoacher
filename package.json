@@ -59,7 +59,7 @@
     "husky": "^8.0.1",
     "module-alias": "^2.2.2",
     "postcss": "^8.4.16",
-    "postcss-scss": "^4.0.4",
+    "postcss-scss": "^4.0.5",
     "rimraf": "^3.0.2",
     "sass": "^1.54.9",
     "stylelint": "^14.11.0",
