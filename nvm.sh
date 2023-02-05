@@ -25,9 +25,9 @@ VERSION=$(nvm --version)
 
 if [ -z "$VERSION" ];
 then
-  echo NVM not available
+  echo Environment does not have NVM installed
 else
-  echo NVM version $VERSION available
+  echo Environment has NVM version $VERSION installed
 
   set -e
 
@@ -35,8 +35,8 @@ else
 
   if [[ $? != 0 ]];
   then
-    echo NVM not configured
+    echo Environment does not have NVM configured
   else
-    echo NVM configured
+    echo Environment has NVM version $VERSION configured
   fi
 fi
