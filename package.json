@@ -28,10 +28,10 @@
     "debug": "^4.3.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.4",
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.5",
     "@babel/eslint-parser": "^7.21.3",
-    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-env": "^7.21.5",
     "@babel/register": "^7.21.0",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
