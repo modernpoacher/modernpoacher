@@ -1,4 +1,4 @@
-import gulp from 'gulp'
+import gulp from '@sequencemedia/gulp'
 import dartSass from 'sass'
 import gulpSass from 'gulp-sass'
 import debug from 'gulp-debug'
