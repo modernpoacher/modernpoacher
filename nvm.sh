@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash +e
 
 NVM=~/.nvm
 
@@ -10,7 +10,8 @@ then
 
   source $NVM/nvm.sh
 else
-  NVM=$(brew --prefix nvm)
+  NVM=$(brew --prefix nvm 2> /dev/null)
+
   if [ -f "$NVM/nvm.sh" ];
   then
     unset npm_package_scripts_nvm
@@ -21,7 +22,7 @@ else
   fi
 fi
 
-VERSION=$(nvm --version)
+VERSION=$(nvm --version 2> /dev/null)
 
 if [ -z "$VERSION" ];
 then
@@ -29,9 +30,7 @@ then
 else
   echo Environment has NVM version $VERSION installed
 
-  set -e
-
-  nvm use
+  nvm use 2> /dev/null
 
   if [[ $? != 0 ]];
   then
@@ -40,3 +39,5 @@ else
     echo Environment has NVM version $VERSION configured
   fi
 fi
+
+exit 0
