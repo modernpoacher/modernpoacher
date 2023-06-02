@@ -14,3 +14,6 @@ gulp
 
 gulp
   .task('build:css:watch', gulp.series('build:css', buildCssWatch))
+
+gulp
+  .task('default', gulp.series('build:css'))
