@@ -33,6 +33,7 @@
     "@babel/preset-env": "^7.22.4",
     "@modernpoacher/hooks": "^1.0.415",
     "@sequencemedia/gulp": "^1.1.5",
+    "@sequencemedia/gulp-debug": "^1.0.3",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
     "babel-plugin-minify-dead-code-elimination": "^0.5.2",
