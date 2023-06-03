@@ -10,8 +10,8 @@
     "build": "cross-env NODE_ENV=production concurrently -r \"npm run build:js\" \"npm run build:css\"",
     "build:watch": "cross-env NODE_ENV=production concurrently -r \"npm run build:js:watch\" \"npm run build:css:watch\"",
     "build:js:clean": "rimraf pub/assets/js/*.js pub/assets/js/*.js.map",
-    "build:js": "webpack",
-    "build:js:watch": "npm run build:js -- -w",
+    "build:js": "npm run webpack",
+    "build:js:watch": "npm run webpack -- -w",
     "build:css:clean": "npm run gulp -- build:css:clean",
     "build:css": "npm run gulp -- build:css",
     "build:css:watch": "npm run gulp -- build:css:watch",
@@ -22,6 +22,7 @@
     "lint:css": "cross-env NODE_ENV=production stylelint src/sass",
     "lint:css:fix": "npm run lint:css -- --fix",
     "nvm": "bash nvm.sh",
+    "webpack": "webpack",
     "gulp": "gulp --color",
     "prepare": "husky install"
   },
