@@ -41,7 +41,7 @@
     "@sequencemedia/gulp-debug": "^1.0.21",
     "@sequencemedia/gulp-postcss": "^1.0.16",
     "@sequencemedia/gulp-sass": "^1.0.15",
-    "@sequencemedia/gulp-sourcemaps": "^1.0.15",
+    "@sequencemedia/gulp-sourcemaps": "^1.0.16",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
     "babel-plugin-minify-dead-code-elimination": "^0.5.2",
