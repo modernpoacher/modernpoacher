@@ -1,79 +1,24 @@
-version: 2.1
-
+version: 2.0
 jobs:
-  lint_and_test:
-    docker:
-      - image: cimg/node:lts
-    steps:
-      - checkout
-      - run:
-          name: Authenticate with NPM
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-      - run:
-          name: Install
-          command: npm ci
-      - run:
-          name: Lint
-          command: npm run lint
-      - run:
-          name: Test
-          command: npm test
   publish:
     docker:
       - image: cimg/node:lts
     steps:
+      - run:
+          name: Install LFTP
+          command: |
+            sudo apt-get update;
+            sudo apt-get install lftp;
       - checkout
       - run:
-          name: Publish to NPM
-          command: |
-            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-
-            PATTERN="([0-9]+)\.([0-9]+)\.([0-9]+)"
-            NAME=$(node -p "require('./package').name")
-            VERSION=$(node -p "require('./package').version")
-            PUBLISHED_VERSION=$(npm view $NAME version)
-
-            echo Version is $VERSION
-            echo Published version is $PUBLISHED_VERSION
-
-            [[ $VERSION =~ $PATTERN ]]
-
-            VERSION_MAJOR="${BASH_REMATCH[1]}"
-            VERSION_MINOR="${BASH_REMATCH[2]}"
-            VERSION_PATCH="${BASH_REMATCH[3]}"
-
-            [[ $PUBLISHED_VERSION =~ $PATTERN ]]
-
-            PUBLISHED_VERSION_MAJOR="${BASH_REMATCH[1]}"
-            PUBLISHED_VERSION_MINOR="${BASH_REMATCH[2]}"
-            PUBLISHED_VERSION_PATCH="${BASH_REMATCH[3]}"
-
-            if [ $VERSION_MAJOR -gt $PUBLISHED_VERSION_MAJOR ] || [ $VERSION_MINOR -gt $PUBLISHED_VERSION_MINOR ] || [ $VERSION_PATCH -gt $PUBLISHED_VERSION_PATCH ]
-            then
-              set +e
-
-              npm ci
-              npm publish
-
-              if [[ $? != 0 ]];
-              then
-                echo Version $VERSION was not published
-              else
-                echo Published version $VERSION
-              fi
-            fi
+          name: Publish with LFTP
+          command: lftp ftp://$FTP_USERNAME:$FTP_PASSWORD@modernpoacher.com -e "set ftp:ssl-allow no; mirror -R --parallel=10 pub public_html; exit"
 
 workflows:
   version: 2
   commit-workflow:
     jobs:
-      - lint_and_test:
-          filters:
-            branches:
-              only: master
       - publish:
-          requires:
-            - lint_and_test
           filters:
             tags:
               only: /^v.*/
