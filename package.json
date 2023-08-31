@@ -40,7 +40,7 @@
     "@babel/preset-env": "^7.22.14",
     "@modernpoacher/hooks": "^1.0.432",
     "@sequencemedia/gulp": "^1.1.63",
-    "@sequencemedia/gulp-clean-css": "^1.0.28",
+    "@sequencemedia/gulp-clean-css": "^1.0.29",
     "@sequencemedia/gulp-css-purge": "^1.1.21",
     "@sequencemedia/gulp-debug": "^1.0.32",
     "@sequencemedia/gulp-postcss": "^1.0.31",
