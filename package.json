@@ -41,7 +41,7 @@
     "@modernpoacher/hooks": "^1.0.433",
     "@sequencemedia/gulp": "^1.1.67",
     "@sequencemedia/gulp-clean-css": "^1.0.31",
-    "@sequencemedia/gulp-css-purge": "^1.1.23",
+    "@sequencemedia/gulp-css-purge": "^1.1.24",
     "@sequencemedia/gulp-debug": "^1.0.34",
     "@sequencemedia/gulp-postcss": "^1.0.33",
     "@sequencemedia/gulp-sass": "^1.0.29",
