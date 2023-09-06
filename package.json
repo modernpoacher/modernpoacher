@@ -44,7 +44,7 @@
     "@sequencemedia/gulp-css-purge": "^1.1.25",
     "@sequencemedia/gulp-debug": "^1.0.35",
     "@sequencemedia/gulp-postcss": "^1.0.34",
-    "@sequencemedia/gulp-sass": "^1.0.30",
+    "@sequencemedia/gulp-sass": "^1.0.31",
     "@sequencemedia/gulp-sourcemaps": "^1.0.31",
     "autoprefixer": "^10.4.15",
     "babel-loader": "^9.1.3",
