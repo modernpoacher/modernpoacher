@@ -35,10 +35,10 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.23.4",
-    "@babel/core": "^7.23.6",
+    "@babel/core": "^7.23.7",
     "@babel/eslint-parser": "^7.23.3",
-    "@babel/preset-env": "^7.23.6",
-    "@modernpoacher/hooks": "^1.0.454",
+    "@babel/preset-env": "^7.23.7",
+    "@modernpoacher/hooks": "^1.0.455",
     "@sequencemedia/gulp": "^1.1.134",
     "@sequencemedia/gulp-clean-css": "^1.0.66",
     "@sequencemedia/gulp-css-purge": "^1.1.62",
