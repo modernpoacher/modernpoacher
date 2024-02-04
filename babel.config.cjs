@@ -20,7 +20,8 @@ function env () {
 
 const presets = [
   [
-    '@babel/env', {
+    '@babel/env',
+    {
       targets: {
         node: 'current'
       },
@@ -32,6 +33,12 @@ const presets = [
 
 const plugins = [
   [
+    'minify-dead-code-elimination',
+    {
+      optimizeRawSize: true
+    }
+  ],
+  [
     'module-resolver',
     {
       root: ['./src'],
@@ -39,12 +46,6 @@ const plugins = [
       alias: {
         build: './build'
       }
-    }
-  ],
-  [
-    'minify-dead-code-elimination',
-    {
-      optimizeRawSize: true
     }
   ]
 ]
