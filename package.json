@@ -43,7 +43,7 @@
     "@sequencemedia/gulp-clean-css": "^1.0.79",
     "@sequencemedia/gulp-css-purge": "^1.1.77",
     "@sequencemedia/gulp-debug": "^1.0.83",
-    "@sequencemedia/gulp-postcss": "^1.0.87",
+    "@sequencemedia/gulp-postcss": "^1.0.88",
     "@sequencemedia/gulp-sass": "^1.0.78",
     "@sequencemedia/gulp-sourcemaps": "^1.0.81",
     "autoprefixer": "^10.4.17",
