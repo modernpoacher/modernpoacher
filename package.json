@@ -39,7 +39,7 @@
     "@babel/eslint-parser": "^7.23.10",
     "@babel/preset-env": "^7.24.0",
     "@modernpoacher/hooks": "^1.0.467",
-    "@sequencemedia/gulp": "^1.1.167",
+    "@sequencemedia/gulp": "^1.1.168",
     "@sequencemedia/gulp-clean-css": "^1.0.87",
     "@sequencemedia/gulp-css-purge": "^1.1.85",
     "@sequencemedia/gulp-debug": "^1.0.90",
