@@ -7,7 +7,7 @@
   "author": {
     "name": "Jonathan Perry for Modern Poacher Limited",
     "email": "modernpoacher@modernpoacher.com",
-    "url": "http://modernpoacher.com"
+    "url": "https://modernpoacher.com"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production concurrently -r \"npm run build:js\" \"npm run build:css\"",
