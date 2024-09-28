@@ -38,7 +38,6 @@
     "@babel/core": "^7.25.2",
     "@babel/eslint-parser": "^7.25.1",
     "@babel/preset-env": "^7.25.4",
-    "@modernpoacher/hooks": "^1.0.495",
     "@sequencemedia/gulp": "^1.1.251",
     "@sequencemedia/gulp-clean-css": "^1.0.166",
     "@sequencemedia/gulp-css-purge": "^1.1.176",
