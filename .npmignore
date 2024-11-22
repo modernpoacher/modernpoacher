@@ -2,15 +2,16 @@
 
 .circleci
 .github
+.husky
 
 .editorconfig
-.eslintignore
-.eslintrc
 
+.gitattributes
 .gitignore
-
-gulpfile.js
 
 # NPM
 .npmignore
 .npmrc
+
+# NVM
+nvm.sh

@@ -17,5 +17,3 @@ node_modules
 # Hooks
 .husky/hooks
 
-pub/assets/fonts
-src/fonts

@@ -13,7 +13,6 @@
     "build": "npm run webpack",
     "build:clean": "rimraf  pub/assets/css/*.css pub/assets/js/*.css.map pub/assets/js/*.mjs pub/assets/js/*.cjs.map pub/assets/js/*.mjs.map",
     "build:watch": "npm run webpack -- -w",
-    "gulp": "gulp --color",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:css": "stylelint src/sass",
     "lint:css:fix": "npm run lint:css -- --fix",
@@ -58,7 +57,6 @@
     "stylelint-config-recommended-scss": "^14.1.0",
     "stylelint-scss": "^6.10.0",
     "terser-webpack-plugin": "^5.3.10",
-    "vinyl-paths": "^5.0.0",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
   }
