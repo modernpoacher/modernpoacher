@@ -37,7 +37,7 @@
     "core-js": "^3.40.0",
     "css-loader": "^7.1.2",
     "debug": "^4.4.0",
-    "eslint": "^9.17.0",
+    "eslint": "^9.18.0",
     "globals": "^15.14.0",
     "husky": "^9.1.7",
     "mini-css-extract-plugin": "^2.9.2",
