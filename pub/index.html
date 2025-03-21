@@ -4,7 +4,14 @@
 		<title>Modern Poacher Limited for Zashiki Karakuri</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
-		<!-- Google tag (gtag.js) -->
+		<script type="importmap">
+			{
+				"imports": {
+					"debug": "https://esm.sh/debug",
+					"jquery": "https://esm.sh/jquery"
+				}
+			}
+		</script>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-H26NYB6ZJN"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -14,6 +21,7 @@
 			gtag('js', new Date());
 			gtag('config', 'G-H26NYB6ZJN');
 		</script>
+		<script type="module" async src="./assets/js/analytics.mjs"></script>
 		<link rel="stylesheet" href="./assets/css/modernpoacher.css" />
 		<link rel="apple-touch-icon" sizes="57x57" href="./assets/png/apple-icon-57x57.png" />
 		<link rel="apple-touch-icon" sizes="60x60" href="./assets/png/apple-icon-60x60.png" />
@@ -67,15 +75,5 @@
 				&copy; 2019 - 2024
 			</footer>
 		</section>
-
-		<script type="importmap">
-			{
-				"imports": {
-					"debug": "https://esm.sh/debug",
-					"jquery": "https://esm.sh/jquery"
-				}
-			}
-		</script>
-		<script type="module" src="./assets/js/analytics.mjs"></script>
 	</body>
 </html>
