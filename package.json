@@ -22,8 +22,8 @@
     "nvm": "bash nvm.sh",
     "prebuild": "npm run nvm",
     "prepare": "husky",
-    "transform": "DEBUG=modernpoacher* ./transform.sh",
-    "prettier": "prettier src/**/*.scss --write"
+    "prettier": "prettier src/**/*.scss --write",
+    "transform": "DEBUG=modernpoacher* ./transform.sh"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
