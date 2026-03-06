@@ -30,7 +30,7 @@
     "@babel/preset-env": "^7.29.0",
     "@sequencemedia/eslint-config-standard": "^0.2.107",
     "autoprefixer": "^10.4.27",
-    "babel-loader": "^10.0.0",
+    "babel-loader": "^10.1.0",
     "babel-plugin-minify-dead-code-elimination": "^0.5.2",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^14.0.0",
