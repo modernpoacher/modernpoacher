@@ -25,6 +25,10 @@
     "prettier": "prettier src/**/*.scss --write",
     "transform": "DEBUG=modernpoacher* ./transform.sh"
   },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "core-js@3.51.0": true
+  },
   "devDependencies": {
     "@babel/core": "7.29.7",
     "@babel/preset-env": "7.29.7",
@@ -56,9 +60,5 @@
     "terser-webpack-plugin": "^5.6.1",
     "webpack": "^5.111.1",
     "webpack-cli": "^7.2.3"
-  },
-  "allowScripts": {
-    "@parcel/watcher@2.6.0": true,
-    "core-js@3.51.0": true
   }
 }
